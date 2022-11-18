@@ -101,25 +101,25 @@ jobs:
         submodules: true
 
     # Apply compatibility patches, so 'include' headers are correct
-    - run: git apply ../compat.patch
-      name: Apply compat patch
-      working-directory: ./v8
+    #- run: git apply ../compat.patch
+    #  name: Apply compat patch
+    #  working-directory: ./v8
 
-    - run: git apply ../compat_jsargs.patch
-      name: Apply patch for breaking reverse jsargs change
-      working-directory: ./v8
+    #- run: git apply ../compat_jsargs.patch
+    #  name: Apply patch for breaking reverse jsargs change
+    #  working-directory: ./v8
 
-    - run: git apply ../compat_adaptor.patch
-      name: Apply patch for breaking adaptor change
-      working-directory: ./v8
+    #- run: git apply ../compat_adaptor.patch
+    #  name: Apply patch for breaking adaptor change
+    #  working-directory: ./v8
 
-    - run: git apply ../compat_sparkplug.patch
-      name: Apply patch for breaking sparkplug change
-      working-directory: ./v8
+    #- run: git apply ../compat_sparkplug.patch
+    #  name: Apply patch for breaking sparkplug change
+    #  working-directory: ./v8
 
-    - run: git apply ../version.patch
-      name: Adjust V8 version
-      working-directory: ./v8
+    #- run: git apply ../version.patch
+    #  name: Adjust V8 version
+    #  working-directory: ./v8
 
     - run: mkdir -p 'build/release/libs' 'build/release/include' 2>/dev/null
     - run: cp -R 'v8/include' 'build/release'
