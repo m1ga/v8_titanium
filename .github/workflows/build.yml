@@ -35,25 +35,25 @@ jobs:
 
     # Apply compatibility patches
     # NOTE: These also need to be applied in the package step
-    - run: git apply ../compat.patch
-      name: Apply compat patch
-      working-directory: ./v8
+    #- run: git apply ../compat.patch
+    #  name: Apply compat patch
+    #  working-directory: ./v8
 
-    - run: git apply ../compat_jsargs.patch
-      name: Apply patch for breaking reverse jsargs change
-      working-directory: ./v8
+    #- run: git apply ../compat_jsargs.patch
+    #  name: Apply patch for breaking reverse jsargs change
+    #  working-directory: ./v8
 
-    - run: git apply ../compat_adaptor.patch
-      name: Apply patch for breaking adaptor change
-      working-directory: ./v8
+    #- run: git apply ../compat_adaptor.patch
+    #  name: Apply patch for breaking adaptor change
+    #  working-directory: ./v8
 
-    - run: git apply ../compat_sparkplug.patch
-      name: Apply patch for breaking sparkplug change
-      working-directory: ./v8
+    #- run: git apply ../compat_sparkplug.patch
+    #  name: Apply patch for breaking sparkplug change
+    #  working-directory: ./v8
 
-    - run: git apply ../version.patch
-      name: Adjust V8 version
-      working-directory: ./v8
+    #- run: git apply ../version.patch
+    #  name: Adjust V8 version
+    #  working-directory: ./v8
 
     - name: Checkout depot_tools repo
       run: git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
