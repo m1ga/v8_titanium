@@ -29,9 +29,9 @@ jobs:
     - run: sudo update-alternatives --install /usr/bin/python python /usr/bin/python2 1
       name: set python2 as primary
 
-    - run: git apply ../DEPS.patch
-      name: Apply DEPS patch
-      working-directory: ./v8
+    #- run: git apply ../DEPS.patch
+    #  name: Apply DEPS patch
+    #  working-directory: ./v8
 
     # Apply compatibility patches
     # NOTE: These also need to be applied in the package step
